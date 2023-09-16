@@ -34,7 +34,6 @@ btn2.onclick=SecondTask;
 let btn3=document.querySelector('.btn3');
 let res3=document.querySelector('.result3');
 
-
 function ThirdTask(){
   for( i=1; i< 8; i++){
     for( j=1; j< 11; j++){
@@ -43,5 +42,22 @@ function ThirdTask(){
   res3.innerHTML += '<br>' ;  
 }
 }
-
 btn3.onclick=ThirdTask;
+
+// Task4
+let btn4=document.querySelector('.btn4');
+let res4=document.querySelector('.result4');
+let str4= ' ';
+
+function FourthTask(){  
+  let sum=0;
+  for( let i=1; i <= 15; i++){
+    sum += i;
+    str4 = sum;
+  res4.innerHTML = str4;
+  console.log(str4);
+}
+}
+btn4.onclick=FourthTask;
+
+  
