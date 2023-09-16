@@ -12,3 +12,18 @@ function FirstTask(){
     }     
 }   
 btn1.onclick=FirstTask;
+
+
+let btn2=document.querySelector('.btn2');
+let res2=document.querySelector('.result2');
+let str2= ' ';
+
+function SecondTask(){
+  for(let i=10; i <= 20; i++){
+    str2 += Math.pow( [i],2); 
+    str2 += ' , '
+    res2.innerHTML=str2;
+    console.log(i);         
+ }     
+}   
+btn2.onclick=SecondTask;
