@@ -75,3 +75,20 @@ function FifthTask(){
 }
 }
 btn5.onclick=FifthTask;  
+
+
+// Task6
+let btn6=document.querySelector('.btn6');
+let res6=document.querySelector('.result6');
+let str6= ' ';
+
+function  SixTask(){  
+  let avarage=0;
+  for( let i=1; i <= 500; i++){
+    avarage += i/500;
+    str6 = avarage;
+  res6.innerHTML = str6;
+  console.log(str4);
+}
+}
+btn6.onclick=SixTask;
