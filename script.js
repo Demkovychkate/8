@@ -60,4 +60,18 @@ function FourthTask(){
 }
 btn4.onclick=FourthTask;
 
-  
+// Task5
+let btn5=document.querySelector('.btn5');
+let res5=document.querySelector('.result5');
+let str5= ' ';
+
+function FifthTask(){  
+  let mult=1;
+  for( let i=15; i <= 35; i++){
+    mult += mult*i;
+    str5 = mult;
+  res5.innerHTML = str5;
+  console.log(str4);
+}
+}
+btn5.onclick=FifthTask;  
