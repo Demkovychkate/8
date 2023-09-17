@@ -54,8 +54,7 @@ function FourthTask(){
   for( let i=1; i <= 15; i++){
     sum += i;
     str4 = sum;
-  res4.innerHTML = str4;
-  console.log(str4);
+  res4.innerHTML = str4; 
 }
 }
 btn4.onclick=FourthTask;
@@ -70,8 +69,7 @@ function FifthTask(){
   for( let i=15; i <= 35; i++){
     mult += mult*i;
     str5 = mult;
-  res5.innerHTML = str5;
-  console.log(str4);
+  res5.innerHTML = str5; 
 }
 }
 btn5.onclick=FifthTask;  
@@ -87,8 +85,28 @@ function  SixTask(){
   for( let i=1; i <= 500; i++){
     avarage += i/500;
     str6 = avarage;
-  res6.innerHTML = str6;
-  console.log(str4);
+  res6.innerHTML = str6;  
 }
 }
 btn6.onclick=SixTask;
+
+// Task7
+let btn7=document.querySelector('.btn7');
+let res7=document.querySelector('.result7');
+let str7= ' ';
+
+function  SevenTask(){  
+  let sum1=0;
+  for( let i=30; i <= 80; i++){
+    if(Math.floor(i /2)== i/2){
+      sum1 += i;
+      str7 = sum1;
+
+    }
+  res7.innerHTML = str7;
+  console.log(str7);
+    }
+   
+}
+
+btn7.onclick=SevenTask;
