@@ -101,12 +101,28 @@ function  SevenTask(){
     if(Math.floor(i /2)== i/2){
       sum1 += i;
       str7 = sum1;
-
     }
+
   res7.innerHTML = str7;
   console.log(str7);
     }
    
 }
-
 btn7.onclick=SevenTask;
+
+
+// Task8
+let btn8=document.querySelector('.btn8');
+let res8=document.querySelector('.result8');
+let str8= ' ';
+
+function  EightTask(){    
+  for( let i=100; i <= 200; i++){
+    if( i %3==0 ){
+      str8 += [i]; 
+      str8 += ' , '
+  res8.innerHTML = str8;
+    }   
+}
+}
+btn8.onclick=EightTask;
