@@ -1,4 +1,4 @@
-let mass= [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
+let mass= [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35];
 
 // Task1
 let btn1=document.querySelector('.btn1');
@@ -60,4 +60,18 @@ function FourthTask(){
 }
 btn4.onclick=FourthTask;
 
-  
+// Task5
+let btn5=document.querySelector('.btn5');
+let res5=document.querySelector('.result5');
+let str5= ' ';
+
+function FifthTask(){  
+  let mult=1;
+  for( let i=15; i <= 35; i++){
+    mult += mult*i;
+    str5 = mult;
+  res5.innerHTML = str5;
+  console.log(str4);
+}
+}
+btn5.onclick=FifthTask;  
