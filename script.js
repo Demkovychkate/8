@@ -126,3 +126,78 @@ function  EightTask(){
 }
 }
 btn8.onclick=EightTask;
+
+// Task9
+let btn9=document.querySelector('.btn9');
+let res9=document.querySelector('.result9');
+let str9= ' ';
+
+function  NineTask(){  
+  let n = 48;  
+  for( let i=2; i <= n; i++){
+    if(n % i==0 ){
+      str9 += [i]; 
+      str9 += ' , '
+  res9.innerHTML = str9;
+  console.log(str9);
+    }   
+}
+}
+btn9.onclick=NineTask;
+
+// Task10
+let btn10=document.querySelector('.btn10');
+let res10=document.querySelector('.result10');
+let str10= ' ';
+
+function TenTask(){  
+  let n = 48;  
+  for( let i=2; i <= n; i++){
+    if(n % i==0 ){
+     if( i % 2 ===0){
+     str10 += i;
+     str10 += ','
+  res10.innerHTML = str10;
+     }
+    }   
+}
+}
+btn10.onclick=TenTask;
+
+
+// Task11
+let btn11=document.querySelector('.btn11');
+let res11=document.querySelector('.result11');
+let str11= ' ';
+
+function ElevenTask(){  
+  let n = 48;  
+  let sumN=0;
+  for( let i=2; i <= n; i++){
+    if(n % i==0 ){
+     if( i % 2 ===0){
+      sumN +=i;
+     str11 = sumN;   
+  res11.innerHTML = str11;
+  console.log(str11);
+     }
+    }   
+}
+}
+btn11.onclick=ElevenTask;
+
+// Task12
+let btn12=document.querySelector('.btn12');
+let res12=document.querySelector('.result12');
+let str12= ' ';
+
+function TwelveTask(){
+  for( i=1; i< 11; i++){
+    for( j=1; j < 11; j++){
+        res12.innerHTML +=`${i}*${j}=${i*j}<br>`;
+       
+    }
+    res12.innerHTML +='<hr>' 
+ }
+}
+btn12.onclick=TwelveTask;
